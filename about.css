@@ -1,0 +1,31 @@
+.head ul{list-style-type: none; display: flex;}
+.head li{margin: 25px;font-size:25px ;}
+a{text-decoration: none;color: rgba(240, 248, 255, 0.684);border-bottom:1px solid white ;}
+a:hover{color: white;}
+body{background-image: url(wallpaperflare.com_wallpaper\ \(8\).jpg);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.profile{height:400px  ;width: 400px;margin-left:33%;border:8px solid white 
+    ;outline:8px solid rgba(0, 0, 0, 0.775) ;margin-top:10% ;border-radius: 50%;}
+.pers{background-color: rgba(0, 0, 0, 0.775);color: aliceblue;padding:40px
+     ;text-align: justify;font-size:25px 
+    ;height: auto;width: 1300px;margin: auto;}
+    h2{text-align: center;}
+    .pers{display: flex;}
+    .info{margin-left:90px ;border-left:5px solid white ;padding: 20px;}
+    .skills{background-color: rgba(0, 0, 0, 0.775);color: aliceblue;padding:40px
+        ;text-align: justify;font-size:25px }
+        .skills ul{list-style-type: none;size: 200%;display: flex;}
+        .skills li {padding:30px ;}
+        .icons{margin-left: 40px ;}
+        .skills{background-color: rgba(0, 0, 0, 0.57);color: aliceblue;padding:40px;;
+            height: 300px;width: 1300px;margin: auto;text-align: center;font-size:25px}
+        .certification{background-color: rgba(0, 0, 0, 0.775);color: aliceblue;padding:40px
+            ;height: auto;width: 1300px;margin: auto;text-align: center;font-size:25px}
+.certification ul {display: flex;list-style-type: none;}
+.certification li {margin-right:auto ;}
+.about{background-color: rgba(0, 0, 0, 0.775);color: aliceblue;padding:40px
+    ;height: auto;width: 1300px;margin: auto;text-align: center;font-size:25px}
+    .foot{width:100% ;height:auto ;background-color: black;color: aliceblue;}
+    .foot ul{list-style-type: none;display: flex ;text-decoration: none;}
+    .foot li i{text-decoration: none;}
+    .foot li  {padding: 30px;margin-left:40px ;}
+    a{text-decoration: none;}

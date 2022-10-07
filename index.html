@@ -120,24 +120,35 @@
 
     <div class="certification">
         <h2 id="cart">Certifications</h2>
-    <div class="slider">
-        <span id="slide-1"></span>
-        <span id="slide-2"></span>
-        <span id="slide-3"></span>
-        <span id="slide-4"></span>
-        <div class="image-container">
-          <img src="HTML_certificate.jpg" class="slide" width="1000" height="600" />
-          <img src="web-dev-basics_certificate.jpg" class="slide" width="1000" height="600" />
-          <img src="Screenshot_2022-09-15-16-13-38-47_e2d5b3f32b79de1d45acd1fad96fbb0f.jpg" class="slide" width="1000" height="600" />
-          <img src="IMG_20221006_161605.jpg" class="slide" width="1000" height="600" />
-        </div>
-        <div class="buttons">
-          <a href="#slide-1"></a>
-          <a href="#slide-2"></a>
-          <a href="#slide-3"></a>
-          <a href="#slide-4"></a>
-        </div>
-      </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="Screenshot_2022-09-15-16-13-38-47_e2d5b3f32b79de1d45acd1fad96fbb0f.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="HTML_certificate.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="IMG_20221006_161605.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
     </div>
 
     <div class="foot">
@@ -149,7 +160,27 @@
             <li> <a href="https://www.linkedin.com/in/mohamed-faseh-b7a666250/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
             <li style="font-size:30px ;">all copyrights reserved &copy;</li>
 
-         
+         <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
 
             
 

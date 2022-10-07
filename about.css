@@ -29,3 +29,6 @@ body{background-image: url(wallpaperflare.com_wallpaper\ \(8\).jpg);font-family:
     .foot li i{text-decoration: none;}
     .foot li  {padding: 30px;margin-left:40px ;}
     a{text-decoration: none;}
+html {
+  scroll-behavior: smooth;
+}
